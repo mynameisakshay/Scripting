@@ -1,0 +1,18 @@
+
+#ls /no_directory-available > file1
+show error on screen
+
+#ls /directory_available > file1
+put standard output in file1
+
+#ls /no_directory-available 2> file1
+put error in file1
+
+#ls /anything &> file1
+put output+error in file1
+
+#ls /anything  &> dev/null
+discard the output into blackhole
+
+> new, create
+>> append

@@ -1,0 +1,20 @@
+# echo $?
+-> 0
+-> last command is executed successfully
+
+# echo $?
+-> non-zero
+-> last command is not executed successfully
+
+
+# command ; command
+-> runs two commands one below the other
+
+# command && command
+-> runs two commands one below the other
+
+
+# echo $?
+-> 256=0
+-> 257=1
+-> 258=2
